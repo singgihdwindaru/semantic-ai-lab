@@ -4,46 +4,6 @@ This project demonstrates a simple Retrieval-Augmented Generation (RAG) pipeline
 
 ---
 
-## 📁 Project Structure
-
-semantic-ai-lab/
-│
-├── README.md
-├── requirements.txt
-│
-├── data/
-│   └── sample_texts/         # Example documents to embed or retrieve
-│
-├── notebooks/
-│   ├── 01_embedding_vs_chunking.ipynb
-│   ├── 02_cosine_similarity_exploration.ipynb
-│   ├── 03_vector_search_faiss.ipynb
-│   └── 04_rag_pipeline_intro.ipynb
-│
-├── src/
-│   ├── embeddings/
-│   │   ├── encoder.py        # Wraps SentenceTransformer, OpenAI, etc.
-│   │   └── utils.py
-│   │
-│   ├── chunking/
-│   │   └── splitter.py       # Sentence, paragraph, token-based splitters
-│   │
-│   ├── retrieval/
-│   │   ├── search.py         # FAISS, Pinecone, etc.
-│   │   └── ranker.py         # Optional reranking logic
-│   │
-│   ├── rag/
-│   │   └── pipeline.py       # Basic RAG pipeline (embed → retrieve → generate)
-│   │
-│   └── evaluation/
-│       └── metrics.py        # Similarity, precision@k, recall, etc.
-│
-└── tests/
-    └── test_embeddings.py    # Unit tests
-
-
----
-
 ## ⚙️ Setup (with [`uv`](https://github.com/astral-sh/uv))
 
 ### 1. Install `uv`
