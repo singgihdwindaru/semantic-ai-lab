@@ -8,6 +8,7 @@ dependencies = [
     "hf-xet>=1.1.0",
     "ipykernel>=6.29.5",
     "nltk>=3.9.1",
+    "psycopg2>=2.9.10",
     "sentence-transformers>=4.1.0",
 ]
 
