@@ -6,11 +6,12 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "hf-xet>=1.1.0",
+    "ipykernel>=6.29.5",
     "nltk>=3.9.1",
     "sentence-transformers>=4.1.0",
 ]
 
 [dependency-groups]
 dev = [
-    "jupyter>=1.1.1",
+    "ipykernel >=1.1.1",
 ]
